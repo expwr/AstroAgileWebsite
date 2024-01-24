@@ -8,9 +8,12 @@ import Layout from "../layouts/Layout.astro";
     
     <div>
         
-        <div>
-            <h1>Chase Hutch-e-son</h1>
-            <img src="https://trello.com/1/cards/65b141b060e11c08fd07e9f6/attachments/65b141e90a69107dbf03fc08/previews/65b141ea0a69107dbf03fc4d/download/1695243063137.jpg"/>    
+        <div class=" hero-container">
+            <div class="text">
+                <h1 class=" text">Chase</h1>
+                <h1 class=" text">Hutcheson</h1>
+            </div>
+            <img src="./public/chase.jpg" class="image"/>
         </div>
         <div>
             <h2>Skills && Interests</h2>
@@ -56,5 +59,16 @@ import Layout from "../layouts/Layout.astro";
 <style>
     .navbar{
         height: 80px;
+    }
+    .hero-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .image {
+        width: 500px;
+        height: 500px;
+    }
+    .text {
+        font-size: xx-large;
     }
 </style>
