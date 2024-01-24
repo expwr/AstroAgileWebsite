@@ -6,20 +6,22 @@ import Layout from "../layouts/Layout.astro";
 ---
 <Layout title = "Bio -> Chase Hutcheson">
     
-    <div>
+    <div class="container">
         
-        <div class=" hero-container">
-            <div class="text">
-                <h1 class=" text">Chase</h1>
-                <h1 class=" text">Hutcheson</h1>
+        <div class="hero-container-container">
+            <div class="hero-container">
+                <div>
+                    <h1 class=" text">Chase</h1>
+                    <h1 class=" text">Hutcheson</h1>
+                </div>
+                <img src="./public/chase.jpg" class="image"/>
             </div>
-            <img src="./public/chase.jpg" class="image"/>
         </div>
+
         <div>
             <h2>Skills && Interests</h2>
             <ul>
                 <li>Backend Website Development</li>
-                <li>RACIST</li>
                 <li>Food</li>
                 <li>PHP</li>
                 <li>Html</li>
@@ -43,23 +45,34 @@ import Layout from "../layouts/Layout.astro";
                 </div>
                 <div>
                     <p>Linkedin</p>
-                    <a href=""></a>
+                    <a href="https://www.linkedin.com/in/chase-hutcheson-b46371291/">https://www.linkedin.com/in/chase-hutcheson-b46371291/</a>
                 </div>
                 <div>
                     <p>Email</p>
-                    <a href=""></a>
-                </div>
-                <div>
-                    <p>Phone Number</p>
-                    <a></a>
+                    <a href="
+                    chasehutcheson2006@gmail.com
+                    ">
+                    chasehutcheson2006@gmail.com
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </Layout>
 <style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
     .navbar{
         height: 80px;
+    }
+    .hero-container-container{
+        display: flex 1;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
     .hero-container{
         display: flex;
