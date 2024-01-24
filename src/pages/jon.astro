@@ -11,7 +11,7 @@ import WJon from "../assets/wJon.mp4"
         <div>
             <h1>Jon Factor</h1>
             <img src="https://media.licdn.com/dms/image/D4E03AQFhTTquLeRtFA/profile-displayphoto-shrink_200_200/0/1697679197902?e=2147483647&v=beta&t=wPw7iUfjxUPusx4Ig1NbKMV0cdGIdr6gwq38NtLh6J8" />
-            <video src={WJon} controls/>
+            <video src={WJon} controls class="video"/>
         </div>
         <div>
             <h2>Skills && Interests</h2>
@@ -59,5 +59,9 @@ import WJon from "../assets/wJon.mp4"
     }
     video {
         width: 600px;
+    }
+    .video {
+        display: none;
+        /* change display for a suprise :) */
     }
 </style>
