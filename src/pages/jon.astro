@@ -1,0 +1,67 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import WJon from "../assets/wJon.mp4"
+---
+
+<Layout title = "Bio -> Chase Hutcheson">
+    
+    <div>
+        
+        <div>
+            <h1>Jon Factor</h1>
+            <img src="https://media.licdn.com/dms/image/D4E03AQFhTTquLeRtFA/profile-displayphoto-shrink_200_200/0/1697679197902?e=2147483647&v=beta&t=wPw7iUfjxUPusx4Ig1NbKMV0cdGIdr6gwq38NtLh6J8" />
+            <video src={WJon} controls class="video"/>
+        </div>
+        <div>
+            <h2>Skills && Interests</h2>
+            <ul>
+                <li>Full Stack Website Development</li>
+                <li>Food</li>
+                <li>Angular JS</li>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Python</li>
+                <li>React Js</li>
+                <li>Java Script</li>
+                <li>Python</li>
+            </ul>
+            <h2>Education && Acomplishments</h2>
+            <ul>
+                <li>Senior at MCCTC</li>
+                <li>GMetrics: All*</li>
+                <li>Qualified for Nationals in Website Application Team</li>
+            </ul>
+            <h2>Contact Information</h2>
+            <div>
+                <div>
+                    <p>Github</p>
+                    <a href="https://github.com/JonFactor">https://github.com/JonFactor</a>
+                </div>
+                <div>
+                    <p>Linkedin</p>
+                    <a href="https://www.linkedin.com/in/jon-factor-59769a294">https://www.linkedin.com/in/jon-factor-59769a294</a>
+                </div>
+                <div>
+                    <p>Email</p>
+                    <a>Jon.Factor2@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
+<style>
+    .navbar{
+        height: 80px;
+    }
+    img {
+        width: 338px;
+    }
+    video {
+        width: 600px;
+    }
+    .video {
+        display: none;
+        /* change display for a suprise :) */
+    }
+</style>
